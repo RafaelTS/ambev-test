@@ -24,15 +24,7 @@ describe('login scenarios', () => {
     cy.get('.btn-close-error-alert').eq(1).siblings('span').should('have.text', passwordRequiredMessage);
     
   })
-
-  it('Should return a message without email', () => {
-
-    cy.login('usuario@teste.com') 
-
-    cy.get('.btn-close-error-alert').eq(0).siblings('span').should('have.text', passwordRequiredMessage);
-    
-  })
-
+  
   it('Should return a message without email', () => {
 
     cy.login('usuario@teste.com') 
