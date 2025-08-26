@@ -1,25 +1,25 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('login', (email, password) => {   
+  cy.visit('/')
+
+  if (email !== undefined) {
+    cy.get('#email').type(email)
+  }  
+
+  if (password !== undefined) {
+    cy.get('#password').type(password)
+  }
+
+  cy.get('[data-testid="entrar"]').should('be.visible').click()
+})
+
+
+Cypress.Commands.add('register', (nome, email, senha) => {
+  cy.visit('/cadastrarusuarios') // página de cadastro
+
+  cy.get('[data-testid="nome"]').type(nome)
+  cy.get('[data-testid="email"]').type(email)
+  cy.get('[data-testid="password"]').type(senha)
+  
+
+  cy.get('[data-testid="cadastrar"]').click()
+})
