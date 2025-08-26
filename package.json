@@ -9,7 +9,10 @@
   },
   "scripts": {
     "cypress:web": "npx cypress open",
-    "cypress:headless": "npx cypress run --browser electron"
+    "cypress:headless": "npx cypress run --browser electron",
+    "cypress:ui": "npx cypress run --spec 'cypress/e2e/ui/**/*.cy.js'",
+    "cypress:api": "npx cypress run --spec 'cypress/e2e/api/**/*.cy.js'",
+    "cypress:all": "npx cypress run --spec 'cypress/e2e/**/*.cy.js'"
   },
   "repository": {
     "type": "git",
