@@ -14,7 +14,7 @@ Cypress.Commands.add('login', (email, password) => {
 
 
 Cypress.Commands.add('register', (nome, email, senha) => {
-  cy.visit('/cadastrarusuarios') // página de cadastro
+  cy.visit('/cadastrarusuarios') 
 
   cy.get('[data-testid="nome"]').type(nome)
   cy.get('[data-testid="email"]').type(email)

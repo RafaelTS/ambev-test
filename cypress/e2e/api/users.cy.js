@@ -1,8 +1,8 @@
 describe('API - Users', () => {
   it('Should add a user with success', () => {
     const usuario = {
-      nome: 'Rafael QA',
-      email: `rafa_${Date.now()}@qa.com`,
+      nome: 'Rafael Teixeira',
+      email: `rafa_${Date.now()}@ambev.com`,
       password: 'teste123',
       administrador: 'true'
     };
@@ -14,7 +14,7 @@ describe('API - Users', () => {
     });
   });
 
-  it('Deve listar usuários', () => {
+  it('Should list users', () => {
     cy.apiRequest('GET', '/usuarios').then((res) => {
       expect(res.status).to.eq(200);
       expect(res.body).to.have.property('usuarios');

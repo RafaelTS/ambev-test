@@ -16,7 +16,7 @@ describe('login scenarios', () => {
     
   })
 
-  it('Should return a message with email and password blanked', () => {
+  it('Should return a message when both email and password are empty', () => {
 
     cy.login()
     
@@ -41,9 +41,9 @@ describe('login scenarios', () => {
     
   })
 
-  it.only('Should the user must log in successfully', () => {
+  it('User must log in successfully', () => {
 
-    cy.fixture('example').then((user) => {
+    cy.fixture('users').then((user) => {
  
       cy.register(user.nome, user.email, user.password) 
 

@@ -4,7 +4,7 @@ export default defineConfig({
   chromeWebSecurity: false,
   e2e: {
     setupNodeEvents(on, config) {
-      // hooks/node events se precisar
+      // hooks/node events 
     },
     baseUrl: 'https://front.serverest.dev', 
     testIsolation: false,
