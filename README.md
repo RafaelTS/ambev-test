@@ -1,6 +1,6 @@
 # Desafio de Automação NTT DATA -> Ambev
 
-## Projeto de automação no e-commerce de testes da Swag Labs.
+## Projeto de automação para demonstrar conhecimento com cypress e automação de api's e web
 
 <li><b> Frontend</b>: https://front.serverest.dev/</li>
 <li><b> Swagger API</b>: https://serverest.dev/ </li>
