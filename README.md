@@ -1,4 +1,4 @@
-# Desafio de Automação NTT DATA -> Ambev
+# Automação com Cypress
 
 ## Projeto de automação para demonstrar conhecimento com cypress e automação de api's e web
 
