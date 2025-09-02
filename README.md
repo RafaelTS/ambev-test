@@ -9,8 +9,8 @@
 #### Clonando o projeto:
 
 ```bash
-git clone https://github.com/RafaelTS/ambev-test
-cd ambev-test
+https://github.com/RafaelTS/cypress-api-web-example.git
+cd cypress-api-web-example
 ```
 
 Instale as dependências
